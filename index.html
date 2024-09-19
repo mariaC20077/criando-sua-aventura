@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura de um Hobbit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.webp" alt="">
+            <p> Você é Bilbo Bolseiro, um hobbit pacato que vive tranquilamente em Bolsão, na região do Condado. A sua
+                vida
+                é confortável e rotineira, até o dia em que o mago Gandalf aparece na sua porta com uma proposta
+                inesperada:
+                participar de uma grande aventura. Relutante no início, você acaba sendo levado a se juntar a um grupo
+                de
+                treze anões liderados por Thorin Escudo de Carvalho.
+
+                O objetivo dessa jornada é recuperar o tesouro ancestral dos anões, guardado na Montanha Solitária,
+                atualmente dominada por um terrível dragão chamado Smaug. No entanto, o caminho até lá é cheio de
+                perigos,
+                desde florestas sombrias e montanhas infestadas de goblins, até criaturas misteriosas e desafios
+                inimagináveis.
+            </p>
+            <button class="btn-proximo" data-proximo="1">aceitar a jornada</button>
+            <button class="btn-proximo" data-proximo="2">recusar</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você e o grupo de anões saem para uma grande aventura, você estava com medo é claro, mas nada que te
+                impedisse de participar da ação. Em algum momento da caminhada que parecia não terminar nunca mais,
+                vocês acabam cruzando com um bando de trolls</p>
+            <button class="btn-proximo" data-proximo="3">tentar roubar a comida dos trolls discretamente</button>
+            <button class="btn-proximo" data-proximo="4">avisar aos anões sobre os trolls</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo0.webp" alt="">
+            <p>Bilbo não participa da jornada, e, sinceramnente, passou a vida sentindo arrependimento por isso </p>
+        </div>
+
+        <div class="passo" id="passo-3">
+           
+            <p>Ao tentar roubar a comida dos trolls, Bilbo é capturado. Gandolf aparece e transforma os trolls em pedra,
+                mas
+                os anões acabam perdendo suprimentos</p>
+            <button class="btn-proximo" data-proximo="5">Tentar recuperar os suprimentos dos trolls antes de
+                partir</button>
+            <button class="btn-proximo" data-proximo="6">seguir em frente rapidamente sem tentar recuperar nada</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>o grupo evita os goblins, mas a jornada fica mais cansativa e longa</p>
+            <button class="btn-proximo" data-proximo="8">parar e descansar por mais tempo, recuperando forças</button>
+            <button class="btn-proximo" data-proximo="9">continuar a jornada sem descansar para compensar o tempo
+                perdido</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>você consegue recuperar alguns suprimentos escondidos pelos trolls, mas perde tempo, oque atrasa a
+                jornada
+            </p>
+            <button class="btn-proximo" data-proximo="7"> a travessia nas montanhas</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>o grupo continua rapidamente, mas, sem suprimentos suficicentes, enfrentam dificuldades nas montanhas,
+                como
+                fome e cansaço</p>
+            <button class="btn-proximo" data-proximo="17">a travessia das montanhas</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>a travessia das montanhas. O grupo segue pelas montanhas, casados e famintos, Thorin sugere que descansem
+                em
+                uma caverna da montanha.</p>
+            <button class="btn-proximo" data-proximo="10">seguir thorin pela caverna desconhecida</button>
+            <button class="btn-proximo" data-proximo="11">sugerir procurar outro lugar para descansar</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="cenario-passo3.png" alt="">
+            <p>O descanso permite que todos se recuperem fisicamente, mas ao perder tempo, eles são pegos por uma
+                tempestade que os impede de avançar</p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="cenario-passo3.png" alt="">
+            <p>o grupo se esgota facilmente e alguns anões adoecem, eles não conseguem terminar a aventura</p>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O grupo é capturado por goblins, mas bilbo encontra um anel que faz com que ele fique invisivel</p>
+            <button class="btn-proximo" data-proximo="12">usar o anel para ajudar seus companheiros anões a
+                escapar</button>
+            <button class="btn-proximo" data-proximo="13">guardar o anel para si e escapar sozinho</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="cenario-passo3.png" alt="">
+            <p>a jornada fica mais longa e cansativa, o grupo não consegue matar o dragão</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Bilbo consegue libertar os anões sem ser notado, oque eleva o nivel de confiança de seus companheiros
+                sobre
+                ele</p>
+            <button class="btn-proximo" data-proximo="14">O dragão Smaug</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>guardar o anel para si e usa-lo apenas para escapar sozinho.</p>
+            <button class="btn-proximo" data-proximo="14">O dragão Smaug</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>No meio da batalha contra o grande dragão, você descobre uma fraqueza </p>
+            <button class="btn-proximo" data-proximo="15">contar a um dos anões</button>
+            <button class="btn-proximo" data-proximo="16">omitir para usar como moeda de troca</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>voê avisa aos anões sobre a fraqueza do drgão e eles o matam, recuperando sua terra e tesouro, eles te
+                oferecem moradia e uma vida confortavel como agradecimento pela sua ajuda, ou uma grande bolsa cheia de
+                ouro e um cavalo para que você pudesse voltar para casa</p>
+            <button class="btn-proximo" data-proximo="18">ficar com seus amigos anões</button>
+            <button class="btn-proximo" data-proximo="19">voltar para casa</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="cenario-passo3.png" alt="">
+            <p>sem a informação, Smaug destroi oque sobrou do reino, e tudo é perdido para sempre</p>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>a travessia das montanhas. O grupo segue pelas montanhas, casados e famintos, Thorin sugere que descansem
+                em
+                uma caverna da montanha.</p>
+            <button class="btn-proximo" data-proximo="10">seguir thorin pela caverna desconhecida</button>
+            <button class="btn-proximo" data-proximo="11">sugerir procurar outro lugar para descansar</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <img src="cenario-passo5.jpg" alt="">
+            <p>você, depois de pensar muito, decide ficar ao lado dessas
+                pessoas que depois de tudo isso, se tornaram seus amigos</p>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <img src="cenario-passo5.jpg" alt="">
+            <p>depois de pensar muito, você decide voltar para sua querida
+                casa, seus amigos anões prometem ir te visitar. Você vive uma vida longa e feliz</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
